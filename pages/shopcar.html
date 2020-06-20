@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+		<style>
+			@import url("../assets/css/fixed.css");
+			@import url("../assets/css/shopcar.css");
+			@import url("../assets/css/searchbox.css");
+		</style>
+		<script>
+		function openNav() {
+		document.getElementById("sidebar").style.width = "250px";
+		}
+		function closeNav() {
+		document.getElementById("sidebar").style.width = "0";
+		}
+		</script>
+	</head>
+	<body>
+		<header>
+			<div class = "solid_header">
+				<a href="../index.html"><img src = "../assets/images/logo.png" alt = "logo" class="logo"></a>
+				<img src = "../assets/images/slogan.png" alt = "member" class="sloganpic">
+				<div class = "member">
+					<a href="../pages/member.html"><img src = "../assets/images/member.png" alt = "member" class="memberpic"></a>
+					<a href="../pages/shopcar.html"><img src = "../assets/images/shopcar.png" alt = "member" class="carpic"></a>
+				</div>
+			</div>
+			<div class = "header" id = "header">
+				<img src = "../assets/images/menu.png" alt = "menu" onclick="openNav()" style="cursor: pointer;">
+				<div id = "sidebar" class = "sidenav">
+					<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+					<img src = "../assets/images/logo1.png" class="listlogo">
+					<a href="" class="list1">msi&nbsp;RX5700</a>
+					<a href="" class="list1">msi&nbsp;RTX2080&nbsp;super</a>
+					<a href="" class="list2">asus&nbsp;GTX1660&nbsp;super</a>
+					<a href="" class="list2">asus&nbsp;RTX2080&nbsp;TI</a>
+					<a href="" class="list3">GIGA&nbsp;RX5700&nbsp;XT</a>
+					<a href="" class="list3">GIGA&nbsp;RTX2060&nbsp;super</a>
+				</div>
+				<div class="right">
+					<div class="webdesigntuts-workshop">
+						<form action="" method="">
+							<input type="search" placeholder="Search...">
+							<button>Search</button>
+						</form>
+					</div>
+					<nav>
+						<ul>
+							<li><a href="../pages/product.html">商品總覽</a></li>
+							<li><a href="../pages/shopcar.html">購物車</a></li>
+							<li><a href="../pages/aboutus.html">關於我們</a></li>
+							<li><a href="../index.html">回首頁</a></li>
+						</ul>
+					</nav>
+				</div>
+			</div>
+		</header>
+		<!--content-->
+		<div class = "main-content" id="main">
+			<div class="shopcartitle">
+				<span class="stit1">圖片</span>
+				<span class="stit2">資訊</span>
+				<span class="stit3">單價</span>
+				<span class="stit4">數量</span>
+				<span class="stit5">總計</span>
+			</div>
+			<from action="../index.html">
+			<div class="outside">
+				<div class="shopcaritem">
+					<div>
+						<img src="../assets/images/msi2.jpg">
+					</div>
+					<div class="iteminfro">【MSI 微星】GeForce RTX 2080 SUPER GAMING X TRIO 顯示卡</div>
+					<div class="iteminfro2">$23,990</div>
+					<div class="iteminfro3"><button id="num-min" class="num-min">-</button>
+						<input id="input-num"type="text" class="input-num"  value="1" style="width:60px;height:40px;" name = "amount" >
+					<button id="num-plus" class="num-plus">+</button></div>
+					<div class="iteminfro2">$23,990</div>
+					<div class="iteminfro4">
+						<form action = " " method = "get">
+							<button type = "submit" title="是否確定要移除" class="bt2">X</button>
+						</form>
+					</div>
+				</div>
+				<div class="shopcaritem">
+					<div>
+						<img src="../assets/images/msi2.jpg">
+					</div>
+					<div class="iteminfro">【MSI 微星】GeForce RTX 2080 SUPER GAMING X TRIO 顯示卡</div>
+					<div class="iteminfro2">$23,990</div>
+					<div class="iteminfro3"><button id="num-min" class="num-min">-</button>
+						<input id="input-num"type="text" class="input-num"  value="1" style="width:60px;height:40px;" name = "amount" >
+					<button id="num-plus" class="num-plus">+</button></div>
+					<div class="iteminfro2">$23,990</div>
+					<div class="iteminfro4">
+						<form action = " " method = "get">
+							<button type = "submit" title="是否確定要移除" class="bt2">X</button>
+						</form>
+					</div>
+				</div>
+			</div>
+			<button type="submit" class="bt"><span>前往結帳</span></button>
+			</from>
+		</div>
+		<!--content end-->
+		<footer>
+			<div class = "footer_top">
+				<ul>
+					<li><a class="bigt" style="text-decoration: none;">商品總覽</a>
+					<hr class = "hr">
+					<ul class = "footer_list">
+						<li><a href = "../pages/product.html#asus">AUSU</a></li>
+						<li><a href = "../pages/product.html#msi">MSI</a></li>
+						<li><a href = "../pages/product.html#gigabyte">GIGABYTE</a></li>
+					</ul>
+				</li>
+				<li><a class="bigt" style="text-decoration: none;">會員資訊</a>
+				<hr class = "hr">
+				<ul class = "footer_list">
+					<li><a href = "../pages/register.html">註冊會員</a></li>
+					<li><a href = "../pages/modifyacc.html">修改會員資料</a></li>
+					<li><a href = "../pages/record.html">購買紀錄</a></li>
+					<li><a href = "../pages/shopcar.html">購物車</a></li>
+				</ul>
+			</li>
+			<li><a class="bigt" style="text-decoration: none;">關於我們</a>
+			<hr class = "hr">
+			<ul class = "footer_list">
+				<li><a href = "../pages/aboutus.html">聯絡我們</a></li>
+				
+			</ul>
+		</li>
+		
+	</ul>
+	<img src = "../assets/images/logo1.png" alt = "logo">
+</div>
+<hr class="hr2">
+<div class = "copyright">
+	© 2020 Belief of GPU 保留所有權利
+</div>
+</footer>
+<script>
+		window.onscroll = function() {myFunction()};
+		var header = document.getElementById("header");
+		var sticky = header.offsetTop;
+		function myFunction() {
+		if (window.pageYOffset > sticky) {
+		header.classList.add("sticky");
+		} else {
+		header.classList.remove("sticky");
+		}
+		}
+		var num_plus = document.getElementById("num-plus");
+var num_min = document.getElementById("num-min");
+var input_num = document.getElementById("input-num");
+num_plus.onclick = function() {
+input_num.value = parseInt(input_num.value) + 1;
+}
+num_min.onclick = function() {
+if(input_num.value <= 1) {
+input_num.value = 1;
+} else {
+input_num.value = parseInt(input_num.value) - 1;
+}
+}
+</script>
+</body>
+</html>
